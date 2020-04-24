@@ -1,17 +1,17 @@
 <?php
-$m=$_GET['maths'];
-$p=$_GET['physics'];
-$ee=$_GET['ee'];
-$cs=$_GET['cs'];
-$c=$_GET['chem'];
-$ms=$_GET['sn'];
+$m=$_POST['maths'];
+$p=$_POST['physics'];
+$ee=$_POST['ee'];
+$cs=$_POST['cs'];
+$c=$_POST['chem'];
+$ms=$_POST['sn'];
 
 $x=max($m, $p, $ee, $cs, $c);
 
 $marks=array($m, $p, $ee, $cs, $c);
 $sub=array('maths', 'physics', 'electrical', 'computer science', 'chemistry');
 
-$mt=$_GET['mt'];
+$mt=$_POST['mt'];
 if($ms=='1')
 {
 if($x==$m)
